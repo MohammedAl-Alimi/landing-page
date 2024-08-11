@@ -1,21 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+  <head> 
 	  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-F3GMPQ70KW"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-F3GMPQ70KW"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-  gtag('config', 'G-F3GMPQ70KW');
-</script>
+      gtag('config', 'G-F3GMPQ70KW');
+    </script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
+    <style>
+      /* Media Query for Mobile Devices */
+      @media screen and (max-width: 600px) {
+        #about .text-container p,
+        #profile .section__text p,
+        #profile .section__text h1 {
+          word-spacing: normal; /* Ensure normal spacing between words */
+          letter-spacing: 0.5px; /* Adjust letter spacing if needed */
+          font-size: 16px; /* Adjust font size for better readability */
+          line-height: 1.5; /* Adjust line height for better spacing */
+        }
+
+        /* Ensure the text container doesn't get too wide */
+        #profile .section__text {
+          max-width: 90%; /* Adjust based on your design */
+          margin: 0 auto; /* Center the text container */
+        }
+      }
+    </style>
   </head>
   <body>
     <nav id="desktop-nav">
@@ -118,7 +137,7 @@
           <div class="text-container">
             <p>
               Welcome to my portfolio! I am Mohammmed, An aspring Software Enginner,
-							Explore my projects, experience, and creative journey. Thank you for visiting!
+              Explore my projects, experience, and creative journey. Thank you for visiting!
             </p>
           </div>
         </div>
